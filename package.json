@@ -1,4 +1,28 @@
 {
+  "name": "boilerplate-api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js",
+    "build": "docker build -t IMAGE_NAME -f Dockerfile .",
+    "deploy": "aws lightsail push-container-image --region us-east-1 --service-name CONTAINER_SERVICE_NAME --label IMAGE_LABEL --image IMAGE_NAME:latest --profile AWS_PROFILE",
+    "ci": "yarn install --immutable --immutable-cache --check-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxxo-labs/boilerplate-api-nodejs.git"
+  },
+  "author": "MiOXXO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oxxo-labs/boilerplate-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/oxxo-labs/boilerplate-api-nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
