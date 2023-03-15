@@ -1,0 +1,13 @@
+# package directories
+node_modules
+jspm_packages
+
+# Other directories
+.build
+coverage
+package-lock.json
+out-logger.json
+.vscode/settings.json
+
+# Common Mac files
+.DS_Store

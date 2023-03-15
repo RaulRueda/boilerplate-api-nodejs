@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+__test__/
+.vscode/
+.git
+.gitignore
+.eslintrc.json
+makefile
+README.md
