@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/oxxo-labs/boilerplate-api-nodejs.git"
   },
-  "author": "MiOXXO",
+  "author": "Raul Rueda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/oxxo-labs/boilerplate-api-nodejs/issues"
